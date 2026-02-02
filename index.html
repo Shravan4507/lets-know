@@ -4,8 +4,12 @@
 <head>
   <meta charset="UTF-8" />
   <link rel="icon" type="image/png" href="/lets-know/favicon.png" />
+  <link rel="apple-touch-icon" href="/lets-know/android-launchericon-192-192.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#00ff9d" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="IntelCore" />
   <link rel="manifest" href="/lets-know/manifest.json" />
   <title>Intel-Core // Cinematic Intel Search</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,6 +17,17 @@
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;700;800&display=swap"
     rel="stylesheet">
   <script>
+    // Handle 404 redirect from GitHub Pages
+    (function (l) {
+      if (l.search[1] === '/') {
+        var decoded = l.search.slice(1).split('&').map(function (s) {
+          return s.replace(/~and~/g, '&')
+        }).join('?');
+        window.history.replaceState(null, null, l.pathname.slice(0, -1) + decoded + l.hash);
+      }
+    }(window.location));
+
+    // Register service worker
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
         navigator.serviceWorker.register('/lets-know/sw.js');
