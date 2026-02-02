@@ -280,7 +280,7 @@ TIMESTAMP: ${new Date().toISOString()}
       <div className="scanline" /><NeuralBackground /><HUD mousePos={mousePos} />
       <header className="system-header">
         <div className="brand">
-          <img src="/favicon.png" alt="logo" className="neon-logo" style={{ width: 24, height: 24, objectFit: 'contain' }} />
+          <img src={import.meta.env.BASE_URL + 'favicon.png'} alt="logo" className="neon-logo" style={{ width: 24, height: 24, objectFit: 'contain' }} />
           <span>INTEL-CORE // NODE_882</span>
         </div>
         <div className="status-grid">
