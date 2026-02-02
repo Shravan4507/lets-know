@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "prebuild": "node -e \"const fs=require('fs'); if(!fs.existsSync('./src/data/Student_Data_Refined.json')) fs.copyFileSync('./src/data/Student_Data_Sample.json', './src/data/Student_Data_Refined.json')\"",
+    "build": "npm run prebuild && tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },

@@ -1,0 +1,30 @@
+[
+    {
+        "Full Name": "Sample User",
+        "Email Address": "sample@example.com",
+        "Email (Personal Email)": "personal@example.com",
+        "Aadhar number or PAN number (Please mention any one of them)": "1234 5678 9012",
+        "College Name": "Sample University",
+        "Branch/Stream": "Computer Science",
+        "SSC Percentage": "90",
+        "SSC Passing Year": "2018",
+        "HSC Percentage /Diploma Percentage": "88",
+        "HSC/Diploma Passing Year": "2020",
+        "Gender": "Male",
+        "Date of Birth": "01/01/2002",
+        "Mobile Number": "9876543210",
+        "Full Address (Current address of Pune)": "Pune, Maharashtra",
+        "PIN Code (College)": "411001",
+        "Current Educational stream": "Engineering",
+        "Caste ( Open/OBC/ST/NT/SC/Any other )": "Open",
+        "Father Name": "Father Name",
+        "Mother Name": "Mother Name",
+        "Father's Occupation": "Business",
+        "Mother's Occupation": "Homemaker",
+        "How many members are there in your family?": "4",
+        "Did you go to a private school or a government school?": "Private",
+        "If Applicable, What were the annual tution fees you paid in the school": "50000",
+        "Annual Family Income (as per Income certificate)": "500000",
+        "Income certificate or EWS certificate number (Mention the income certificate number as per the certificate)": "IC123456"
+    }
+]
